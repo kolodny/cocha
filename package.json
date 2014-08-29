@@ -1,7 +1,7 @@
 {
   "name": "cocha",
   "version": "0.0.0",
-  "description": "",
+  "description": "Run mocha with generators + co",
   "bin": {
     "cocha": "./bin/cocha",
     "_cocha": "./bin/_cocha"
@@ -17,5 +17,20 @@
   },
   "devDependencies": {
     "thunkify": "^2.1.2"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kolodny/cocha.git"
+  },
+  "keywords": [
+    "mocha",
+    "co",
+    "async",
+    "generators"
+  ],
+  "bugs": {
+    "url": "https://github.com/kolodny/cocha/issues"
+  },
+  "homepage": "https://github.com/kolodny/cocha"
 }
