@@ -1,5 +1,5 @@
 const co    = require('co');  
-const mocha = require('mocha');
+const mocha = require(__dirname + '/../mocha');
 
 
 mocha.Runnable.prototype.run = function(fn) {  
