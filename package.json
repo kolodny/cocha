@@ -1,0 +1,21 @@
+{
+  "name": "cocha",
+  "version": "0.0.0",
+  "description": "",
+  "bin": {
+    "cocha": "./bin/cocha",
+    "_cocha": "./bin/_cocha"
+  },
+  "scripts": {
+    "test": "cp bin/* node_modules/.bin/ && node_modules/.bin/cocha"
+  },
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^3.1.0",
+    "mocha": "^1.21.4"
+  },
+  "devDependencies": {
+    "thunkify": "^2.1.2"
+  }
+}
