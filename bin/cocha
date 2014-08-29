@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 
 var spawn = require('child_process').spawn
-  , args = [ __dirname + '/mocha' ];
+  , fs = require('fs')
+  , realMocha = __dirname + '/../../.bin/mocha'
+  , args = [realMocha];
+
 
 args.concat(process.argv.slice(2));
 args.push('--harmony');
 args.push('--require');
-args.push(__dirname + '/_cocha');
+args.push(__dirname + '/../mocha-es6.js');
+
 
 var proc = spawn(process.argv[0], args, { customFds: [0,1,2] });
 proc.on('exit', function (code, signal) {
